@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('/images/bg-pattern-desktop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Josefin Sans', sans-serif, helvetica, Arial;
+  position: relative;
+  line-height: 1.8;
+}
+
+.hero-img {
+  float: right;
+}
+
+.logo {
+  padding: 20px 0 0 165px;
+}
+
+main {
+  padding: 100px 2px 0 165px;
+}
+
+.pink-text {
+  color: #ce9898;
+  font-weight: 300;
+}
+
+.brown-text {
+  color: #423a3a;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  line-height: 1.2;
+  font-size: 60px;
+}
+
+p {
+  color: #ce9898;
+  word-spacing: 2px;
+  padding-top: 30px;
+  font-size: 17px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 2px 0 160px;
+  position: relative;
+}
+
+input {
+  color: #111010;
+  font-size: 25px;
+  background: transparent;
+  opacity: 0.5;
+  font-size: 20px;
+  width: 445px;
+  height: 56px;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  border: 1px solid #ce9898;
+  position: relative;
+}
+
+::placeholder {
+  color: #ce9898;
+  font-size: 20px;
+}
+
+.error-icon {
+  position: absolute;
+  left: 480px;
+  padding-top: 15px;
+}
+
+.invalid {
+  border: 2px solid #d30000;
+}
+
+.error-message {
+  padding: 10px 0 0 190px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  position: absolute;
+  left: 510px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 50px;
+  height: 56px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+button:hover {
+  box-shadow: 0 10px 15px rgb(206, 151, 151, 0.8);
+}
+
+.arrow {
+  padding: 10px;
+}
+/* For Tablet */
+@media screen and (max-width: 960px) {
+  .hero {
+    background-image: url('./images/hero-mobile.jpg');
+    background-size: cover;
+    height: 400px;
+  }
+  .container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  main {
+    padding: 60px 0 0 100px;
+  }
+  form {
+    padding: 40px 0 0 75px;
+  }
+  button {
+    left: 420px;
+  }
+  .hero-img {
+    display: none;
+  }
+
+  button {
+    right: 478px;
+  }
+}
+/* For Smaller Screens  */
+@media screen and (max-width: 700px) {
+  .logo {
+    padding: 15px 0 15px 15px;
+  }
+  .logo img {
+    height: 20px;
+    width: 100px;
+  }
+  .hero {
+    background-image: url('./images/hero-mobile.jpg');
+    background-size: cover;
+    height: 250px;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    padding: 0px;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+    text-align: center;
+  }
+  form {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+  input {
+    font-size: 16px;
+    width: 280px;
+    height: 36px;
+  }
+
+  button {
+    left: 210px;
+    height: min-content;
+    width: 80px;
+  }
+}
