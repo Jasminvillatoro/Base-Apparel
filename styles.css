@@ -92,6 +92,10 @@ input {
   text-align: center;
 }
 
+.correct-message {
+  color: green;
+  text-align: center;
+}
 .hidden {
   display: none;
 }
